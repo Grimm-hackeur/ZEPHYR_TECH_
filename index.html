@@ -1,0 +1,115 @@
+<!<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Portfolio</div>
+        <button class="settings-btn" id="settingsBtn">
+            <i class="fas fa-cog"></i>
+        </button>
+    </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu Paramètres -->
+    <div class="settings-menu" id="settingsMenu">
+        <h3>Paramètres</h3>
+        
+        <div class="settings-group">
+            <h4>Apparence</h4>
+            <div class="setting-item">
+                <span>Mode Sombre</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h4>Langue</h4>
+            <div class="setting-item">
+                <span>Français</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="languageToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h4>Navigation</h4>
+            <div class="setting-item" onclick="scrollToSection('accueil')">
+                <span><i class="fas fa-home"></i> Accueil</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="setting-item" onclick="scrollToSection('projets')">
+                <span><i class="fas fa-code"></i> Projets</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="setting-item" onclick="scrollToSection('contact')">
+                <span><i class="fas fa-envelope"></i> Contact</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenu Principal -->
+    <main>
+        <section id="accueil" class="visible">
+            <h1>Développeur Créatif</h1>
+            <p>Je conçois et développe des expériences web modernes et performantes.</p>
+        </section>
+
+        <section id="projets">
+            <h2>Mes Réalisations</h2>
+            <div class="projet-grid">
+                <div class="projet-card">
+                    <img src="https://via.placeholder.com/600x400?text=Projet+1" alt="Projet 1">
+                    <div class="projet-card-content">
+                        <h3>Plateforme E-commerce</h3>
+                        <p>Solution complète avec paiement en ligne.</p>
+                        <a href="projet1.html" class="projet-btn">Voir plus</a>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <img src="https://via.placeholder.com/600x400?text=Projet+2" alt="Projet 2">
+                    <div class="projet-card-content">
+                        <h3>Application Mobile</h3>
+                        <p>Gestion de tâches avec synchronisation cloud.</p>
+                        <a href="projet2.html" class="projet-btn">Voir plus</a>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <img src="https://via.placeholder.com/600x400?text=Projet+3" alt="Projet 3">
+                    <div class="projet-card-content">
+                        <h3>Site Vitrine</h3>
+                        <p>Design élégant avec animations fluides.</p>
+                        <a href="projet3.html" class="projet-btn">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Travaillons ensemble</h2>
+            <p>Disponible pour des missions freelance ou des collaborations.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
